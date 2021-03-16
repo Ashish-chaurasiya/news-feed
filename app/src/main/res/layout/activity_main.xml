@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/click"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <soup.neumorphism.NeumorphTextView
+                style="@style/Widget.Neumorph.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Indian News"
+                app:neumorph_shadowColorDark="#F60606"
+                android:layout_gravity="center"
+                android:textColor="@color/purple_700"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                />
+            <soup.neumorphism.NeumorphFloatingActionButton
+                style="@style/Widget.Neumorph.Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Times Of India "
+                android:onClick="clickbutton"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:src="@drawable/toi"
+                app:neumorph_shapeType="basin"
+                 />
+
+            <soup.neumorphism.NeumorphFloatingActionButton
+                style="@style/Widget.Neumorph.Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="timesindia"
+                android:src="@drawable/aajtak"
+                android:textStyle="bold"
+                app:neumorph_shapeType="basin"
+                />
+
+            <soup.neumorphism.NeumorphFloatingActionButton
+                style="@style/Widget.Neumorph.Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="the_hindu"
+                android:src="@drawable/thehindu"
+                android:textStyle="bold"
+                app:neumorph_shapeType="basin"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
